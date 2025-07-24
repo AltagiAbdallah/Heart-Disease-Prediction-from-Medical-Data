@@ -1,7 +1,5 @@
-# Heart-Disease-Prediction-from-Medical-Data
-
-![dataset-cover](https://github.com/user-attachments/assets/af1a9196-d189-4352-8953-aacbbb62f1e6)
-
+# Heart Disease Prediction from Medical Data
+![image](https://github.com/user-attachments/assets/dfe9cb78-7596-404e-b8f8-a8e1c638d5ce)
 
 ## Project Overview
 
@@ -64,22 +62,21 @@ This project was developed in a Google Colaboratory (Colab) environment, which p
 
 ## Results & Performance Summary
 
-*(**IMPORTANT:** Please fill in the actual accuracy, ROC AUC, and other metrics from your executed notebook's output for each model.)*
-
 | Model               | Accuracy (Test Set) | Precision (Test Set) | Recall (Test Set) | F1-Score (Test Set) | ROC AUC Score (Test Set) |
 | :------------------ | :------------------ | :------------------- | :---------------- | :------------------ | :----------------------- |
-| Logistic Regression | **[YOUR ACCURACY]** | **[YOUR PRECISION]** | **[YOUR RECALL]** | **[YOUR F1-SCORE]** | **[YOUR ROC AUC]** |
-| SVM                 | **[YOUR ACCURACY]** | **[YOUR PRECISION]** | **[YOUR RECALL]** | **[YOUR F1-SCORE]** | **[YOUR ROC AUC]** |
-| Random Forest       | **[YOUR ACCURACY]** | **[YOUR PRECISION]** | **[YOUR RECALL]** | **[YOUR F1-SCORE]** | **[YOUR ROC AUC]** |
-| XGBoost             | **[YOUR ACCURACY]** | **[YOUR PRECISION]** | **[YOUR RECALL]** | **[YOUR F1-SCORE]** | **[YOUR ROC AUC]** |
+| Logistic Regression | 0.8033              | 0.7692               | 0.9091            | 0.8333              | 0.8690                   |
+| SVM                 | 0.8361              | 0.7949               | 0.9394            | 0.8611              | 0.8864                   |
+| Random Forest       | 0.8689              | 0.8421               | 0.9697            | 0.9014              | 0.9427                   |
+| XGBoost             | 0.8033              | 0.7561               | 0.9394            | 0.8378              | 0.8561                   |
 
-*(Add a sentence here describing which model performed best based on your actual results, e.g., "The **[Best Model Name]** generally showed strong performance, achieving an accuracy of `[Your Best Accuracy]%` and an ROC AUC score of `[Your Best ROC AUC]%` on the test set.")*
+The **Random Forest Classifier** generally shows the strongest performance among the models evaluated, achieving an accuracy of 0.8689 and an ROC AUC score of 0.9427 on the test set.
 
 ## Visualizations
 
 The notebook includes various visualizations to aid understanding:
 * **Correlation Matrix Heatmap**: To visualize the relationships between all features.
 * **Distribution Plots**: Histograms and KDE plots for continuous variables.
+* **Count Plots for Categorical Variables vs. Target**: To show how different categories relate to the target variable.
 * **Model Performance Comparison Chart**: A bar chart summarizing the accuracy of all trained models.
 
 ## Dependencies
@@ -87,9 +84,9 @@ The notebook includes various visualizations to aid understanding:
 The project relies on the following Python libraries:
 * `pandas`
 * `numpy`
-* `scikit-learn` (specifically `train_test_split`, `StandardScaler`, `LogisticRegression`, `SVC`, `RandomForestClassifier`, `accuracy_score`, `precision_score`, `recall_score`, `f1_score`, `roc_auc_score`, `confusion_matrix`, `classification_report`)
+* `scikit-learn` (specifically `train_test_split`, `StandardScaler`, `LogisticRegression`, `SVC`, `RandomForestClassifier`, and various `sklearn.metrics` for evaluation like `accuracy_score`, `precision_score`, `recall_score`, `f1_score`, `roc_auc_score`, `confusion_matrix`, `classification_report`)
 * `xgboost`
-* `matplotlib`
+* `matplotlib.pyplot`
 * `seaborn`
 * `google.colab`
 
@@ -99,11 +96,3 @@ The project relies on the following Python libraries:
 * **Feature Engineering**: Create new features from existing ones to potentially improve model accuracy.
 * **Ensemble Methods**: Explore advanced ensemble techniques to combine the strengths of multiple models.
 * **Deep Learning**: Investigate neural networks for this classification task.
-
-## License
-
-*(Optional: Choose a license for your project, e.g., MIT License, Apache 2.0 License)*
-
-## Contact
-
-*(Optional: Your Name, Your Email, LinkedIn Profile, etc.)*
